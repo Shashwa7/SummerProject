@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Animation</title>
+</head>
+<body>
+    <h1>Introduce yourself!</h1>
+
+
+  <form name="contact" method="POST" data-netlify="true" id="form" onsubmit="return validate()" action="Summer Project/index.html" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+    
+    <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+      
+        <div class="form name">
+  
+              <input type="text" required name='name' autocomplete ="off" id="name"/>
+  
+              <label for="name" class='label-name'>
+                  <span class ="content-name">Name</span>
+              </label>
+      </div> 
+
+</div>
+<div class="form age">
+
+      <input type="number" required name='Age' autocomplete ="off" id="age"/>
+
+      <label for="Age" class='label-name'>
+          <span class ="content-name">Age</span>
+      </label>
+</div>
+
+ </div>
+      <div class="form email">
+
+            <input type="email" required name='Email' autocomplete ="off" id="eml"/>
+
+            <label for="email" class='label-name'>
+                <span class ="content-name">Email</span>
+            </label>
+    </div>
+    <label id="emlVal"></label>
+
+</div>
+
+
+<div>
+        <label class="container">Male
+                <input type="radio" checked="checked" value="male" name="gender">
+                <span class="checkmark"></span>
+              </label>
+              
+              <label class="container">Female
+                <input type="radio" value="female" name='gender'>
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="container">Other
+                    <input type="radio" value="other" name='gender'>
+                    <span class="checkmark"></span>
+                  </label>
+</div>
+
+
+<div data-netlify-recaptcha="true"></div>
+
+    <input type="submit"  id="btn">
+</form>  
+    
+    
+<script src="app.js"></script>
+
+    
+</body>
+</html>
